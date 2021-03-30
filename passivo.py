@@ -28,8 +28,8 @@ while True:
     # transforma a mensagem recebida em bytes para string
     msgString = str(msg,encoding='utf-8')
 
-    # caso a mensagem recebida seja de encerramento ou seja a palavra-chave 'exit', encerra o loop
-    if not msg or msgString == 'exit':
+    # caso a mensagem recebida seja de encerramento, encerra o loop
+    if not msg:
         break
 
     else:
